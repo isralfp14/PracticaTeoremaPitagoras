@@ -10,7 +10,7 @@ public class TrianguloRectangulo {
 	}
 	
 	public TrianguloRectangulo(int catetoA, int catetoB) {
-		if(catetoA <= 0 || catetoB <= 0) {
+		if(catetoA > 0 || catetoB > 0) {
 			try {
 				this.a = catetoA;
 				this.b = catetoB;
@@ -25,8 +25,8 @@ public class TrianguloRectangulo {
 	 * @return area del triangulo rectangulo
 	 * */
 	
-	public int area() {
-		return (this.a * this.b)/2;
+	public double area() {
+		return (double)(this.a * this.b)/2;
 	}
 	
 	
